@@ -185,9 +185,8 @@ export const LandingPage = (): JSX.Element => {
         <div className="flex items-center justify-center h-full">
           <p className="text-[24px] md:text-[32px] font-medium text-center">
             <span className="text-white">Более 100 млн. </span>
-            <span className="text-[#7B8496]">активных пользователей</span>
-            <span className="text-[#EBEEF4] block md:inline"> от</span>
-            <span className="text-white"> $0.05</span>
+            <span className="text-[#7B8496] block md:inline">активных пользователей</span>
+            <span className="text-white md:ml-1">от $0.05</span>
           </p>
         </div>
       </div>
