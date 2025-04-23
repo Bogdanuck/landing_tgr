@@ -37,9 +37,9 @@ export const Footer = (): JSX.Element => {
   };
 
   return (
-    <footer className="w-full h-auto bg-[#0C172C]">
-      <div className="max-w-[1846px] mx-auto px-[34px] py-8 border-b border-[#1B263B]">
-        <div className="flex items-center justify-between">
+    <footer className="w-full h-auto bg-[#0C172C] px-4 md:px-0">
+      <div className="max-w-[1846px] mx-auto py-8 border-b border-[#1B263B]">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0">
           <div className="flex items-center">
             <div className="w-[59px] h-[65px] relative">
               <img className="absolute w-[13px] h-[53px] top-3 left-[46px]" alt="Logo element" src="/group-3.png" />
@@ -48,18 +48,18 @@ export const Footer = (): JSX.Element => {
             </div>
             <img className="w-56 h-[30px] ml-6" alt="TrafficGram" src="/group-238160-1.png" />
           </div>
-          <div className="flex items-center gap-[58px]">
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-[58px]">
             {navItems.map((item, index) => (
               <button 
                 key={index} 
-                className="font-normal text-white text-[15px] text-center whitespace-nowrap hover:text-[#2A67DC] transition-colors"
+                className="font-normal text-white text-[15px] text-center whitespace-nowrap hover:text-[#2A67DC] transition-colors py-2 md:py-0"
                 onClick={() => navigateToSection(index)}
               >
                 {item}
               </button>
             ))}
             <button 
-              className="font-normal text-white text-[15px] text-center whitespace-nowrap hover:text-[#2A67DC] transition-colors"
+              className="font-normal text-white text-[15px] text-center whitespace-nowrap hover:text-[#2A67DC] transition-colors py-2 md:py-0"
               onClick={() => {
                 navigate('/terms');
                 window.scrollTo(0, 0);
