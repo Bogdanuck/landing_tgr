@@ -98,12 +98,7 @@ export const LandingPageHeader = (): JSX.Element => {
             window.scrollTo(0, 0);
           }}
         >
-          <div className="w-9 h-10 relative">
-            <img className="absolute w-2 h-8 top-[7px] left-7" alt="Group" src="/group.png" />
-            <img className="absolute w-2 h-8 top-0 left-3.5" alt="Group" src="/group-1.png" />
-            <img className="absolute w-2 h-8 top-[7px] left-0" alt="Group" src="/group-2.png" />
-          </div>
-          <img className="h-[18px]" alt="TrafficGram" src="/group-238160.png" />
+          <img className="h-10" alt="TrafficGram" src="/header_logo.svg" />
         </div>
 
         {/* Desktop Navigation */}
@@ -131,10 +126,7 @@ export const LandingPageHeader = (): JSX.Element => {
 
         <Button 
           className="hidden md:flex h-12 px-6 rounded-xl bg-[#2A67DC]"
-          onClick={() => {
-            navigate('/');
-            window.scrollTo(0, 0);
-          }}
+          onClick={() => window.open("https://core-frontend.infra.trafficgram.online/catalog", "_blank")}
         >
           <img className="w-6 h-6 mr-2" alt="Register icon" src="/simplification-2.svg" />
           <span className="font-medium text-white text-[17px]">
@@ -179,8 +171,7 @@ export const LandingPageHeader = (): JSX.Element => {
                 className="w-full h-12 px-6 rounded-xl bg-[#2A67DC] mt-4"
                 onClick={() => {
                   setMobileMenuOpen(false);
-                  navigate('/');
-                  window.scrollTo(0, 0);
+                  window.open("https://core-frontend.infra.trafficgram.online/catalog", "_blank");
                 }}
               >
                 <img className="w-6 h-6 mr-2" alt="Register icon" src="/simplification-2.svg" />

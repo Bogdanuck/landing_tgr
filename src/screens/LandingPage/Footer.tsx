@@ -41,12 +41,7 @@ export const Footer = (): JSX.Element => {
       <div className="max-w-[1846px] mx-auto py-8 border-b border-[#1B263B]">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0">
           <div className="flex items-center">
-            <div className="w-[59px] h-[65px] relative">
-              <img className="absolute w-[13px] h-[53px] top-3 left-[46px]" alt="Logo element" src="/group-3.png" />
-              <img className="absolute w-[13px] h-[53px] top-0 left-[23px]" alt="Logo element" src="/group-4.png" />
-              <img className="absolute w-[13px] h-[53px] top-3 left-0" alt="Logo element" src="/group-5.png" />
-            </div>
-            <img className="w-56 h-[30px] ml-6" alt="TrafficGram" src="/group-238160-1.png" />
+            <img className="h-16" alt="TrafficGram" src="/footer_logo.svg" />
           </div>
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-[58px]">
             {navItems.map((item, index) => (

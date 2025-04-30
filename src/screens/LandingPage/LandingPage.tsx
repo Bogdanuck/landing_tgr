@@ -113,7 +113,7 @@ export const LandingPage = (): JSX.Element => {
     {
       title: "Рекламодателем",
       description: "Выбирайте слот и бронируйте размещение",
-      icon: "/group-1-1.png",
+      icon: "/megaphone.svg",
     },
     {
       title: "Паблишером",
@@ -156,9 +156,7 @@ export const LandingPage = (): JSX.Element => {
 
         <div className="max-w-[961px] mx-auto relative z-20 px-4">
           <div className="relative w-[86px] h-[95px] mx-auto mb-8">
-            <img className="absolute w-[19px] h-[78px] top-[17px] left-[67px]" alt="Logo" src="/group-6.png" />
-            <img className="absolute w-[19px] h-[78px] top-0 left-[33px]" alt="Logo" src="/group-7.png" />
-            <img className="absolute w-[19px] h-[78px] top-[17px] left-0" alt="Logo" src="/group-8.png" />
+            <img className="w-full h-full" alt="Logo" src="/main_logo.svg" />
           </div>
           
           <h1 className="text-[32px] md:text-[40px] leading-[1.3] font-medium text-[#0C172C] mb-6">
@@ -169,8 +167,11 @@ export const LandingPage = (): JSX.Element => {
             Прозрачность вместо хаоса
           </p>
 
-          <Button className="h-[60px] md:h-[75px] px-8 rounded-[18px] bg-[#2A67DC] mx-auto">
-            <img className="w-6 h-6 mr-3" alt="Catalog" src="/group-238286.png" />
+          <Button 
+            className="h-[60px] md:h-[75px] px-8 rounded-[18px] bg-[#2A67DC] mx-auto"
+            onClick={() => window.open("https://core-frontend.infra.trafficgram.online/catalog", "_blank")}
+          >
+            <img className="w-6 h-6 mr-3" alt="Catalog" src="/catalog_white_small.svg" />
             <span className="font-medium text-white text-[17px]">
               Каталог приложений
             </span>
@@ -211,7 +212,10 @@ export const LandingPage = (): JSX.Element => {
             <h2 className="font-medium text-white text-4xl md:text-5xl leading-[1.2] md:leading-[57.6px]">
               Для кого предназначен TrafficGram?
             </h2>
-            <Button className="h-[55px] gap-2 rounded-xl bg-[#2A67DC]">
+            <Button 
+              className="h-[55px] gap-2 rounded-xl bg-[#2A67DC]"
+              onClick={() => window.open("https://core-frontend.infra.trafficgram.online/catalog", "_blank")}
+            >
               <img className="w-[25px] h-[25px]" alt="Join icon" src="/simplification.svg" />
               <span className="font-medium text-white text-[17px]">
                 Присоединиться
@@ -309,7 +313,10 @@ export const LandingPage = (): JSX.Element => {
             </Card>
 
             <Card className="bg-[#ffffff66] rounded-[32px] border border-solid border-white p-6 md:p-10 flex items-center justify-center">
-              <Button className="w-full h-[55px] gap-2 rounded-xl bg-[#2A67DC]">
+              <Button 
+                className="w-full h-[55px] gap-2 rounded-xl bg-[#2A67DC]"
+                onClick={() => window.open("https://core-frontend.infra.trafficgram.online/catalog", "_blank")}
+              >
                 <img className="w-6 h-6" alt="Start icon" src="/simplification-11.svg" />
                 <span className="font-medium text-white text-[17px]">
                   Начать работу
@@ -351,7 +358,10 @@ export const LandingPage = (): JSX.Element => {
                 )}
               </React.Fragment>
             ))}
-            <Button className="w-full h-[55px] gap-2 mt-8 md:mt-10 rounded-xl bg-[#2A67DC]">
+            <Button 
+              className="w-full h-[55px] gap-2 mt-8 md:mt-10 rounded-xl bg-[#2A67DC]"
+              onClick={() => window.open("https://core-frontend.infra.trafficgram.online/catalog", "_blank")}
+            >
               <img className="w-[25px] h-[25px]" alt="Join icon" src="/simplification.svg" />
               <span className="font-medium text-white text-[17px]">
                 Присоединиться
@@ -370,16 +380,17 @@ export const LandingPage = (): JSX.Element => {
         <div className="max-w-[961px] mx-auto flex flex-col items-center gap-8 px-4 md:px-0">
           <div className="flex flex-col items-center gap-6 w-full">
             <div className="relative w-[86px] h-[95px]">
-              <img className="absolute w-[19px] h-[78px] top-[17px] left-[67px]" alt="Logo element" src="/group-18.png" />
-              <img className="absolute w-[19px] h-[78px] top-0 left-[33px]" alt="Logo element" src="/group-19.png" />
-              <img className="absolute w-[19px] h-[78px] top-[17px] left-0" alt="Logo element" src="/group-20.png" />
+              <img className="w-full h-full" alt="Logo" src="/main_logo.svg" />
             </div>
             <h2 className="font-medium text-[28px] md:text-[40px] leading-[1.3] md:leading-[52px] text-center">
               <span className="text-[#2A67DC]">TrafficGram</span>
               <span className="text-[#0C172C]"> — решение для тех, кто предпочитает алгоритмы, рейтинги и точный расчёт традиционным ручным сделкам</span>
             </h2>
           </div>
-          <Button className="h-[55px] gap-2 rounded-xl bg-[#2A67DC]">
+          <Button 
+            className="h-[55px] gap-2 rounded-xl bg-[#2A67DC]"
+            onClick={() => window.open("https://core-frontend.infra.trafficgram.online/catalog", "_blank")}
+          >
             <img className="w-6 h-6" alt="Register icon" src="/simplification-2.svg" />
             <span className="font-medium text-white text-[17px]">
               Зарегистрироваться
